@@ -24,13 +24,13 @@
 \begin{center}
 \textbf{Resumen}
 \end{center}
-completar
+El presente articulo tiene como finalidad dar a conocer los diferentes conceptos y algortimos del Aprendizaje Supervisado lo cual perimite comprender la suficiente metodología estadística para poder aprovechar los algoritmos de aprendizaje automático, lo cuales se encuentran en la biblioteca scikit-learn de Python y luego aplicar este conocimiento para resolver un problema clásico de aprendizaje automático.
 \\
 
 \begin{center}
 \textbf{Abstract}
 \end{center}
-completar
+The purpose of this article is to present the different concepts and algorithms of Supervised Learning, which allows us to understand enough statistical methodology to take advantage of machine learning algorithms, which are found in the Python scikit-learn library and then apply this knowledge to solve a classic machine learning problem.
 \\
 \end{abstract}
 
@@ -74,6 +74,7 @@ Hay dos tipos principales de clasificaciones:\\
 \section{Objetivos}\label{sec:2}
 \subsection{General:}
 los algoritmos trabajan con datos “etiquetados” (labeled data), intentado encontrar una función que, dadas las variables de entrada (input data), les asigne la etiqueta de salida adecuada. El algoritmo se entrena con un “histórico” de datos y así “aprende” a asignar la etiqueta de salida adecuada a un nuevo valor, es decir, predice el valor da salida.
+
 \subsection{Específicos:}
 El aprendizaje supervisado se llama así porque el desarrollador actúa como una guía para enseñar al algoritmo las conclusiones a las que debe llegar, es decir la salida del algoritmo ya es conocida. Es similar a la forma en que un niño podría aprender de un maestro.
  \begin{center}
@@ -85,10 +86,38 @@ El aprendizaje supervisado se llama así porque el desarrollador actúa como una
 \section {Marco Teórico}
 
 \subsection{¿Que es aprendizaje supervisado?}	
+ Son aquellos en los que producen funciones a partir de un conjunto de ejemplos de los que conocemos la salida deseada (dependiendo del tipo de salida, suele darse una subcategoría que diferencia entre modelos de clasificación, si la salida es un valor categórico, y modelos de regresión, si la salida es un valor de un espacio continuo).
+La clave del aprendizaje automático son los algoritmos que pueden aplicarse a un
+problema para poder dar una solución que no es evidente. El proceso se inicia cuando se reconoce
+que con las técnicas de la estadística clásica no es suficiente para poder resolver el problema, y
+entonces hay que abordarlo desde otro punto de vista, que consiste en confiar en que un algoritmo
+pueda encontrar una solución mejor. (Hay quien dice que menos mala que la que nosotros tenemos).
+el aprendizaje automático requiere un proceso de madurez continuo ya que todos
+los algoritmos han funcionado al menos una vez muy bien con datos preparados, y muy
+probablemente fallen con los datos que a nosotros nos interesa, aunque no por ello, haya que
+desanimarse. La ciencia es un continuo proceso, que se recorre a veces a base de hipótesis que luego
+resultan falsas: La gravedad era una fuerza según la mecánica clásica de Newton, y un espacio
+deformado por los objetos según la teoría de la relatividad de Einstein. Dos conceptos totalmente
+distintos.
+
 
 %-------------------------------------------------
 \subsection{Algoritmos que se usan en aprendizaje supervisado}	
+ \textbf{Máquinas de Vector Soporte (SVM)}
+Este algoritmo puede ser considerado una extensión del algoritmo “perceptron”. En SVM el objetivo de la optimización es establecer una línea de decisión que separe las clases maximizando el margen entre esta línea y los puntos de muestra cercanos a este hiperplano. Estos puntos se llaman vectores soporte.\\
 
+\textbf{K-NN}
+s un algoritmo de clasificación supervisado basado en criterios de vecindad. En particular, k-NN se basa en la idea de que los nuevos ejemplos serán clasificados según la clase a la cual pertenezca la mayor cantidad de vecinos más cercanos a ellos del conjunto de entrenamiento.
+
+En particular, el algoritmo del vecino más cercano (aquel que asigna a una nueva muestra la clasificación de la muestra más cercana) explora todo el conocimiento almacenado en el conjunto de entrenamiento para determinar cuál será la clase a la que pertenece una nueva muestra, pero únicamente tiene en cuenta el vecino más próximo a ella, por lo que es lógico pensar que es posible que no se esté aprovechando de forma eficiente toda la información que se podría extraer del conjunto de entrenamiento.
+
+Con el objetivo de resolver esta posible deficiencia surge la regla de los k vecinos más cercanos (k-NN), que es una extensión en la que se utiliza la información suministrada por los k ejemplos del conjunto de entrenamiento más cercanos al que queremos clasificar.\\
+\textbf{Árbol de Decisión}
+Los algoritmos de árbol de decisión desglosan el conjunto de datos mediante la formulación de preguntas hasta conseguir el fragmento de datos adecuado para hacer una predicción.
+
+ \begin{center}
+\includegraphics[width=7cm]{./Imagenes/arbol}
+\end{center}
 %-------------------------------------------------
 
 \subsection{Aprendizaje supervisado por regresion y por clasificacion}

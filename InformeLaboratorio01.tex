@@ -14,10 +14,7 @@
 
 
 \title{ APRENDIZAJE SUPERVISADO}
-\author{Damian Mamani, David Reynaldo
-\and Mamani Limache, Jhony José 
-\and nombre  
-\and nombre }
+\author{Damian Mamani, David Reynaldo| Mamani Limache, Jhony| Mamani Maquera, Jorge Luis| Nombre}
 		
 \affiliation{%
  Universidad Privada de Tacna \textbackslash Facultad de Ingenieria \textbackslash Escuela Profesional de Ingenieria de Sistemas
@@ -65,11 +62,11 @@ Existen, a su vez, dos tipos de aprendizaje supervisado:\\
 \includegraphics[width=7cm]{./Imagenes/clasificacion}
 \end{center}
 
-El algoritmo no está en capacidad de determinar a qué grupo pertenece un valor o cuál es el resultado de una operación. Solamente logra relacionar características con etiquetas y así obtener un resultado.\\\\
+El algoritmo no está en capacidad de determinar a qué grupo pertenece un valor o cuál es el resultado de una operación. Solamente logra relacionar características con etiquetas y así obtener un resultado.\\
 
 Hay dos tipos principales de clasificaciones:\\
 
- \textbf{Clasificación Binaria :} Es un tipo de clasificación en el que tan solo se pueden asignar dos clases diferentes (0 o 1). El ejemplo típico es la detección de email spam, en la que cada email es: spam → en cuyo caso será etiquetado con un 1 ; o no lo es → etiquetado con un 0.\\\\
+ \textbf{Clasificación Binaria :} Es un tipo de clasificación en el que tan solo se pueden asignar dos clases diferentes (0 o 1). El ejemplo típico es la detección de email spam, en la que cada email es: spam  en cuyo caso será etiquetado con un 1 ; o no lo es  etiquetado con un 0.
   \textbf{Clasificación Multi-clase :}Se pueden asignar múltiples categorías a las observaciones. Como el reconocimiento de caracteres de escritura manual de números (en el que las clases van de 0 a 9).
 
  
@@ -121,11 +118,64 @@ El aprendizaje supervisado se llama así porque el desarrollador actúa como una
 %-----------------------------------------------------------------
 \section{Análisis}
 
-\begin{itemize}
-\item
-completar
+La inteligencia, en pleno siglo XXI, trasciende las fronteras de la mente. Mucho escuchamos decir que ahora los computadores son más inteligentes que los cerebros y que pronto los robots sustituirán a los humanos para pasar a dominar el mundo.\\
+Está muy arraigada la creencia de que por más inteligente que pueda ser un computador, nunca podrá tener la capacidad de pensar. Sin ánimos de fatalismo, el aprendizaje automático ha revolucionado de forma decisiva el campo de la computación, facilitando la realización de todo tipo de tareas de forma digital y no manual. \\
+\\El aprendizaje automático, también conocido en inglés como machine learning, es un campo de la computación que lleva a otro nivel a la inteligencia artificial: hace que las computadoras aprendan a pensar.\\
+\\
+No, no es tan literal. Los computadores no desarrollaron un cerebro y ahora tienen emociones. Simplemente el machine learning desarrolla algoritmos que hacen que las máquinas puedan aprender por su cuenta y responder a determinadas preguntas con bastante certeza. Para desarrollar estos algoritmos, existen dos modalidades: aprendizaje supervisado y no supervisado.\\
+\\
+  \textbf{Aprendizaje supervisado: funcionamiento y tipos:} \\
+La primera modalidad de aprendizaje que tiene el machine learning es la de aprendizaje supervisado. Usándola, se entrena al algoritmo otorgándole las preguntas, denominadas características, y las respuestas, denominadas etiquetas. Esto se hace con la finalidad de que el algoritmo las combine y pueda hacer predicciones.
+Existen, a su vez, dos tipos de aprendizaje supervisado:
+ \\
+ \\
+ \textbf{-  Regresión: }  tiene como resultado un número específico. Si las etiquetas suelen ser un valor numérico, mediante las variables de las características, se pueden obtener dígitos como dato resultante.
+ \begin{center}
+\includegraphics[width=8cm]{./Imagenes/regresion10}
+\end{center}
 
-\end{itemize}
+ \textbf{}\\  
+ \textbf{-  Clasificación: } 
+: en este tipo, el algoritmo encuentra diferentes patrones y tiene por objetivo clasificar los elementos en diferentes grupos.
+ \begin{center}
+\includegraphics[width=8cm]{./Imagenes/clasificacion10}
+\end{center}
+El algoritmo no está en capacidad de determinar a qué grupo pertenece un valor o cuál es el resultado de una operación. Solamente logra relacionar características con etiquetas y así obtener un resultado.
+ \textbf{}\\  
+ \textbf{}\\  
+\textbf{Aprendizaje no supervisado: ¿en qué consiste?} \\
+A diferencia del aprendizaje supervisado, en el no supervisado solo se le otorgan las características, sin proporcionarle al algoritmo ninguna etiqueta. Su función es la agrupación, por lo que el algoritmo debería catalogar por similitud y poder crear grupos, sin tener la capacidad de definir cómo es cada individualidad de cada uno de los integrantes del grupo. \\
+ \\
+\textbf{¿Cómo se aplica esto en los softwares de automatización?} \\
+El funcionamiento del machine learning y sus dos modalidades son muy fáciles de comprender. Pero, ¿cómo estos algoritmos pueden aplicarse en la vida real? Aunque cualquier particular puede desarrollar diferentes mecanismos simples y aplicarlos con algunos programas informáticos, lo mejor es obtener softwares que hagan todo el trabajo por ti, como los que ofrece WorkFusion.
+\textbf{}\\  
+\textbf{}\\  
+\textbf{Diferencias entre el aprendizaje supervisado y el aprendizaje no supervisado} \\
+\textbf{}\\  
+\textbf{1. Datos de entrada en aprendizaje supervisado y aprendizaje no supervisado}\\  
+\textbf{}\\  
+La principal diferencia entre el aprendizaje supervisado y el aprendizaje no supervisado es la información utilizada en cualquiera de los métodos de aprendizaje automático. Vale la pena señalar que ambos métodos de aprendizaje automático requieren datos, que analizarán para producir ciertas funciones o grupos de datos. Sin embargo, los datos de entrada utilizados en el aprendizaje supervisado son bien conocidos y están etiquetados. Esto significa que la máquina solo tiene la función de determinar los patrones ocultos de los datos ya etiquetados. Sin embargo, los datos utilizados en el aprendizaje no supervisado no se conocen ni etiquetan. El trabajo de la máquina consiste en categorizar y etiquetar los datos brutos antes de determinar los patrones y funciones ocultos de los datos de entrada.
+\textbf{}\\  
+\textbf{}\\  
+\textbf{2. Complejidad Computacional en Aprendizaje Supervisado y Aprendizaje No Supervisado}\\  
+\textbf{}\\  
+El aprendizaje automático es un asunto complejo y cualquier persona involucrada debe estar preparada para la tarea que le espera. Una de las diferencias sobresalientes entre el aprendizaje supervisado y el aprendizaje no supervisado es la complejidad computacional. Se dice que el aprendizaje supervisado es un método complejo de aprendizaje, mientras que el método de aprendizaje no supervisado es menos complejo. Una de las razones por las que el asunto del aprendizaje supervisado es el hecho de que uno tiene que entender y etiquetar las entradas mientras se está en el aprendizaje no supervisado, no se requiere que uno entienda y etiquete las entradas. Esto explica por qué muchas personas han estado prefiriendo el aprendizaje no supervisado en comparación con el método supervisado de aprendizaje automático.
+\textbf{}\\  
+\textbf{}\\  
+\textbf{3. Precisión de los resultados del aprendizaje supervisado y el aprendizaje no supervisado}\\  
+\textbf{}\\  
+La otra diferencia que prevalece entre el aprendizaje supervisado y el aprendizaje no supervisado es la precisión de los resultados producidos después de cada ciclo de análisis de la máquina. Todos los resultados generados por el método supervisado de aprendizaje automático son más precisos y confiables en comparación con los resultados generados por el método de aprendizaje automático no supervisado. Uno de los factores que explica por qué el método supervisado de aprendizaje automático produce resultados precisos y confiables es porque los datos de entrada son bien conocidos y etiquetados, lo que significa que la máquina solo analizará los patrones ocultos. Esto es diferente al método de aprendizaje no supervisado donde la máquina tiene que definir y etiquetar los datos de entrada antes de determinar los patrones y funciones ocultos.
+\textbf{}\\  
+\textbf{}\\ 
+\textbf{4. Número de clases en Aprendizaje Supervisado y Aprendizaje No Supervisado}\\   
+\textbf{}\\ 
+También vale la pena señalar que hay una diferencia significativa cuando se trata de la cantidad de clases. Vale la pena señalar que todas las clases utilizadas en el aprendizaje supervisado son conocidas, lo que significa que también es probable que se conozcan las respuestas en el análisis. El único objetivo del aprendizaje supervisado es, por lo tanto, determinar el grupo desconocido. Sin embargo, no hay conocimiento previo en el método de aprendizaje automático no supervisado. Además, se desconoce el número de clases, lo que significa claramente que no se conoce ninguna información y que los resultados se generan después de que no se puede determinar el análisis. Además, las personas involucradas en el método de aprendizaje no supervisado no conocen ninguna información relacionada con los datos en bruto y los resultados esperados.
+\textbf{}\\  
+\textbf{}\\ 
+\textbf{5. Aprendizaje en tiempo real en aprendizaje supervisado y aprendizaje no supervisado}\\   
+\textbf{}\\ 
+Entre otras diferencias, existe el tiempo después del cual cada método de aprendizaje tiene lugar. Es importante resaltar que el método de aprendizaje supervisado se lleva a cabo fuera de línea mientras que el método de aprendizaje no supervisado se lleva a cabo en tiempo real. Las personas involucradas en la preparación y etiquetado de los datos de entrada lo hacen fuera de línea mientras que el análisis del patrón oculto se realiza en línea, lo que niega a las personas involucradas en el aprendizaje automático la oportunidad de interactuar con la máquina mientras analiza los datos discretos. Sin embargo, el método de aprendizaje automático no supervisado se lleva a cabo en tiempo real de manera que todos los datos de entrada se analizan y etiquetan en presencia de los alumnos, lo que les ayuda a comprender los diferentes métodos de aprendizaje y clasificación de los datos en bruto. El análisis de datos en tiempo real sigue siendo el mérito más importante del método de aprendizaje no supervisado.
+
 %-----------------------------------------------------------------
 \section{Conclusiones}
 
@@ -148,7 +198,7 @@ http://ligdigonzalez.com/todo-sobre-aprendizaje-supervisado-en-machine-learning/
 http://ligdigonzalez.com/diferencia-entre-aprendizaje-supervisado-y-no-supervisado/\\
 https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/\\
 
-\bibitem{Cd94} Autor, \emph{Título}, Revista/Editor, (año)
+
 
 \end{thebibliography}
 

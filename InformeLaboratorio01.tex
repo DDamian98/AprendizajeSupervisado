@@ -14,7 +14,7 @@
 
 
 \title{ APRENDIZAJE SUPERVISADO}
-\author{Damian Mamani, David Reynaldo| Mamani Limache, Jhony| Mamani Maquera, Jorge Luis| Nombre}
+\author{Damian Mamani, David Reynaldo| Mamani Limache, Jhony| Mamani Maquera, Jorge Luis| De la Barra Vásquez, Andrés Eduardo/7
 		
 \affiliation{%
  Universidad Privada de Tacna \textbackslash Facultad de Ingenieria \textbackslash Escuela Profesional de Ingenieria de Sistemas
@@ -43,43 +43,18 @@ The purpose of this article is to present the different concepts and algorithms 
 \section {Introducción}\label{sec:1}
 La primera modalidad de aprendizaje que tiene el machine learning es la de aprendizaje supervisado. Usándola, se entrena al algoritmo otorgándole las preguntas, denominadas características, y las respuestas, denominadas etiquetas. Esto se hace con la finalidad de que el algoritmo las combine y pueda hacer predicciones.\\\\
 Según se comentó en el primer artículo de esta serie, la clasificación es una subcategoría del aprendizaje supervisado en la que el objetivo es predecir las etiquetas de clase categóricas (discreta, valores no ordenados, pertenencia a grupo) de las nuevas instancias, basándonos en observaciones pasadas.\\
-Esquema general de un modelo de aprendizaje supervisado
-\begin{center}
-\includegraphics[width=7cm]{./Imagenes/esquemageneraldelmodelosupervisado}
-\end{center}
- 
-Existen, a su vez, dos tipos de aprendizaje supervisado:\\
- \textbf{Regresión : }tiene como resultado un número específico. Si las etiquetas suelen ser un valor numérico, mediante las variables de las características, se pueden obtener dígitos como dato resultante.\\
- 
- 
-\begin{center}
-\includegraphics[width=7cm]{./Imagenes/regresion}
-\end{center}
- 
- \textbf{Clasificación : }en este tipo, el algoritmo encuentra diferentes patrones y tiene por objetivo clasificar los elementos en diferentes grupos.\\
- 
- \begin{center}
-\includegraphics[width=7cm]{./Imagenes/clasificacion}
-\end{center}
 
-El algoritmo no está en capacidad de determinar a qué grupo pertenece un valor o cuál es el resultado de una operación. Solamente logra relacionar características con etiquetas y así obtener un resultado.\\
 
-Hay dos tipos principales de clasificaciones:\\
 
- \textbf{Clasificación Binaria :} Es un tipo de clasificación en el que tan solo se pueden asignar dos clases diferentes (0 o 1). El ejemplo típico es la detección de email spam, en la que cada email es: spam  en cuyo caso será etiquetado con un 1 ; o no lo es  etiquetado con un 0.
-  \textbf{Clasificación Multi-clase :}Se pueden asignar múltiples categorías a las observaciones. Como el reconocimiento de caracteres de escritura manual de números (en el que las clases van de 0 a 9).
 
  
 %-----------------------------------------------------------------
 \section{Objetivos}\label{sec:2}
 \subsection{General:}
-los algoritmos trabajan con datos “etiquetados” (labeled data), intentado encontrar una función que, dadas las variables de entrada (input data), les asigne la etiqueta de salida adecuada. El algoritmo se entrena con un “histórico” de datos y así “aprende” a asignar la etiqueta de salida adecuada a un nuevo valor, es decir, predice el valor da salida.
+
 
 \subsection{Específicos:}
-El aprendizaje supervisado se llama así porque el desarrollador actúa como una guía para enseñar al algoritmo las conclusiones a las que debe llegar, es decir la salida del algoritmo ya es conocida. Es similar a la forma en que un niño podría aprender de un maestro.
- \begin{center}
-\includegraphics[width=5cm]{./Imagenes/objetivoprincipal}
-\end{center}
+
 
 
 %-----------------------------------------------------------------
@@ -121,7 +96,23 @@ Los algoritmos de árbol de decisión desglosan el conjunto de datos mediante la
 %-------------------------------------------------
 
 \subsection{Aprendizaje supervisado por regresion y por clasificacion}
+Hay dos tipos principales de clasificaciones:\\
 
+ \textbf{Clasificación Binaria :} Es un tipo de clasificación en el que tan solo se pueden asignar dos clases diferentes (0 o 1). El ejemplo típico es la detección de email spam, en la que cada email es: spam  en cuyo caso será etiquetado con un 1 ; o no lo es  etiquetado con un 0.
+  \textbf{Clasificación Multi-clase :}Se pueden asignar múltiples categorías a las observaciones. Como el reconocimiento de caracteres de escritura manual de números (en el que las clases van de 0 a 9).
+  
+  Uno de los principales problemas en la clasificación ocurre cuando el algoritmo nunca converge en la actualización de los pesos mientras está siendo entrenado.
+Esto ocurre cuando las clases no son perfectamente separables linealmente. Por tanto, para tratar con problemas de clasificación binaria la regresión logística es uno de los algoritmos más usados.
+La regresión logística es un algoritmo de clasificación (a pesar de su nombre) simple, pero potente . Funciona muy bien en clases linealmente separables y se puede extender a clasificación multiclase , a través de la técnica OvR.
+Es importante indicar que no todos los modelos de clasificación serán útiles para separar adecuadamente las diferentes clases de un conjunto de datos. Algunos algoritmos, como el “perceptron” (que se basa en redes neuronales artificiales básicas) no convergerán al aprender los pesos del modelo si las clases no pueden separarse por una frontera de decisión lineal.
+Donde se predice un valor real basado en entradas pasadas. Estos algoritmos se usan para predecir valores de salida basados en algunas características de entrada obtenidas de los datos. A esto, el algoritmo construye un modelo basado en las características y los valores de salida de los datos de entrenamiento y este modelo se usa para predecir los valores para nuevos datos. Los valores de salida en este caso son continuos y no discretos.
+
+Algunos ejemplos de este algoritmo son: predecir los precios de la vivienda, predecir las cantidades de compra, predecir la cantidad de ingresos se genera a partir de una nueva campaña de marketing.
+
+Para el caso de clasificacion:
+El algoritmo intenta etiquetar cada ejemplo eligiendo entre dos o más clases diferentes. Estos algoritmos crean modelos predictivos a partir de datos de capacitación que tienen características y etiquetas de clase. Estos modelos predictivos, a su vez usan las características aprendidas de los datos de capacitación sobre datos nuevos, no vistos previamente, para predecir sus etiquetas de clase. Elegir entre dos clases se denomina clasificación binaria, como predecir si alguien incumplirá un préstamo. Elegir entre más de dos clases se denomina clasificación multiclase.
+
+Algunos ejemplos de este algoritmo son: predecir si un cliente va a cancelar o no su tarjeta de crédito, predecir si un alumno pasará o no una clase.
 %-------------------------------------------------
 \subsection{Ventajas,Desventajas e importancia}
 
@@ -214,7 +205,7 @@ Entre otras diferencias, existe el tiempo después del cual cada método de apre
 \end{center}
 %-----------------------------------------------------------------
 \section{Conclusiones}
-
+En conclusión, el aprendizaje supervisado aprende de datos etiquetados, es decir, los datos del cual conoce la variable resultado, y hace predicciones para ese resultado en nuevos conjuntos de datos. Es importante tener en cuenta que solo funciona si su conjunto de datos históricos contiene valores reales para el resultado que intenta predecir.
 \begin{itemize}
 \item 
 completar
